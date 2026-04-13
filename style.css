@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* 
+        --------------
+        FONT FAMILIES
+        --------------
+    */
+    --titles: font-family: "Young Serif", serif;
+    --paragraphs: font-family: "Ancizar Serif", serif;
+    /*
+        --------------
+        COLOR PALETTE
+        --------------
+    */
+    --onyx: #363B40;
+    --wyx: #EBECED;
+    --amaranth: #e01a4fff;
+    --tomato: #f15946ff;
+    --tuscan-sun: #f9c22eff;
+    --pacific-blue: #53b3cbff;
+}
+
+body {
+    background-color: var(--wyx);
+    color: var(--onyx);
+    height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.toggle-theme {
+    background-color: var(--onyx);
+    color: var(--wyx);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    width: clamp(80px, 1vw + 2rem, 100px);
+    height: clamp(80px, 1vw + 2rem, 100px);
+    border-radius: 50%;
+}
+
+button {
+    background-color: var(--onyx);
+    color: var(--wyx);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    width: clamp(20px, 1vw + 2rem, 40px);
+    height: clamp(20px, 1vw + 2rem, 40px);
+    font-size: clamp(0.7rem, 0.4vw + 0.5rem, 1rem);
+    appearance: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button.btn-theme {
+    background-color: var(--wyx);
+    color: var(--onyx);
+}
