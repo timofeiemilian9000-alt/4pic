@@ -32,6 +32,36 @@ html {
     --tomato: #f15946ff;
     --tuscan-sun: #f9c22eff;
     --pacific-blue: #53b3cbff;
+    --emerald: #2ecc71;
+    /* verde principale, vivo ma non troppo */
+    --mint: #6ee7b7;
+    /* soft, perfetto per hover o bg leggeri */
+    --forest: #1f7a63;
+    /* più scuro, elegante (bottoni, header) */
+    --lime: #a7f432;
+    /* molto acceso, da usare con parsimonia */
+    --olive: #708238;
+    /* tono più “terra”, meno digitale */
+    --jade: #00a86b;
+    /* moderno, ottimo come accent */
+    --sea-green: #2e8b57;
+    /* stabile, buon compromesso */
+    --success: #22c55e;
+    /* successo (verde standard UI) */
+    --warning: #f59e0b;
+    /* warning (sta bene con tuscan-sun) */
+    --error: #ef4444;
+    /* errore (più leggibile di amaranth in UI) */
+    --info: #3b82f6;
+    /* informazione (blu pulito) */
+    --dark-2: #2a2e33;
+    /* alternativa a onyx */
+    --dark-3: #1f2327;
+    /* ancora più profondo */
+    --light-2: #f3f4f6;
+    /* sfondi chiari */
+    --border: #d1d5db;
+    /* bordi soft */
 }
 
 body {
@@ -76,7 +106,8 @@ button.btn-theme {
     color: var(--onyx);
 }
 
-header, #hero {
+header,
+#hero {
     padding: 2rem 1rem;
 }
 
@@ -98,4 +129,34 @@ h1 {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+}
+
+.cta {
+    padding: 1rem 1.6rem;
+    font-family: inherit;
+    border-radius: 1.4rem;
+    font-size: 1.7rem;
+}
+
+.cta1 {
+    background-color: var(--pacific-blue);
+    border: var(--wyx) solid 2px;
+    color: var(--wyx);
+}
+
+.cta1:hover {
+    color: var(--success);
+    background-color: var(--wyx);
+    border: var(--success) solid 2px;
+}
+
+.cta2 {
+    border: 2px solid var(--pacific-blue);
+    color: var(--pacific-blue);
+}
+
+.cta2:hover {
+    background-color: var(--emerald);
+    color: var(--wyx);
+    border: none;
 }
